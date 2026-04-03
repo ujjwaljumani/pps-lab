@@ -1,0 +1,19 @@
+marks = list(map(int, input().split()))
+
+total = sum(marks)
+
+aggregate = (total / 400) * 100
+if aggregate >= 75:
+	grade = "Distinction"
+elif aggregate >= 60:
+	grade = "First Division"
+elif aggregate >= 50:
+	grade = "Second Division"
+elif aggregate >= 40:
+	grade = "Third Division"
+else:
+	grade = "Fail"
+
+print(total)
+print(f"{aggregate:.2f}")
+print(grade)
